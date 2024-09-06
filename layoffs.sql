@@ -185,7 +185,7 @@ FROM layoffs_staging2
 WHERE total_laid_off IS NULL
 AND percentage_laid_off IS NULL;
 
--- 4. Remove columns and rows we don't use
+-- 4. Remove unnecessary columns and rows
 -- delete the columns with total_laid_off + percentage_laid_off is null because cant populate data
 DELETE 
 FROM layoffs_staging2
